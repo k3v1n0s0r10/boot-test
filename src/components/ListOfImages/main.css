@@ -1,0 +1,29 @@
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.img-container button {
+  position: fixed;
+  border: none;
+  font-size: 2rem;
+  color: gray;
+  top: 1rem;
+  left: 1rem;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+
+.img-container button:hover {
+  transform: scale(1.1);
+  color: green;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
